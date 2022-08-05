@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.codecademy.HomeFragment"
+        android:label="Bài viết"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_question"
+        android:name="com.example.codecademy.QuestionFragment"
+        android:label="Hỏi đáp"
+        tools:layout="@layout/fragment_question" />
+
+    <fragment
+        android:id="@+id/nav_discussion"
+        android:name="com.example.codecademy.DiscussFragment"
+        android:label="Thảo luận"
+        tools:layout="@layout/fragment_discuss" />
+</navigation>

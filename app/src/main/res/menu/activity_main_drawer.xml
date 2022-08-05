@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_book"
+            android:menuCategory="secondary"
+            android:title="Bài viết" />
+        <item
+            android:id="@+id/nav_question"
+            android:icon="@drawable/ic_question"
+            android:menuCategory="secondary"
+            android:title="Hỏi đáp" />
+        <item
+            android:id="@+id/nav_discussion"
+            android:icon="@drawable/ic_discussion"
+            android:menuCategory="secondary"
+            android:title="Thảo luận" />
+    </group>
+</menu>
