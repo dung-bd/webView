@@ -17,7 +17,6 @@ import com.google.android.material.navigation.NavigationView;
 public class CodecademyActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
-    private ActivityCodecademyBinding binding;
     private Toolbar toolbar;
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
@@ -30,7 +29,8 @@ public class CodecademyActivity extends AppCompatActivity {
         setContentView(R.layout.activity_codecademy);
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
-        //setSupportActionBar(toolbar);
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         appBarConfiguration = new AppBarConfiguration.Builder(R.id.nav_home, R.id.nav_question, R.id.nav_discussion).setDrawerLayout(drawerLayout).build();
         navController = Navigation.findNavController(this, R.id.nav_host_fragment);
